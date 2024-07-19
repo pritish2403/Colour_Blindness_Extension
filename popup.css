@@ -1,0 +1,56 @@
+body {
+    min-width: 300px; /* Or any other size that fits your content */
+    font-family: "Avenir", "Segoe UI", "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    padding: 10px;
+    background: #f7f7f7;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.extension-icon {
+    width: 130px; /* Adjust the size as necessary */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #5c6bc0;
+    font-size: 24px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+    color: #000000;
+    margin: 20px 0;
+}
+
+.inputRadio {
+    margin-right: 10px;
+}
+
+.label {
+    display: block;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.label:hover {
+    background-color: #07b5ff;
+}
+
+.label label {
+    cursor: pointer;
+    display: block;
+}

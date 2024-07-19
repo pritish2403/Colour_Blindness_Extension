@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colour Blindness - Accessibility Tool</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="header">
+        <img src="icon128.png" alt="Colour Blindness Icon" class="extension-icon">
+        <h1>Colour Blindness Assistance</h1>
+    </div>
+    <h2>Please Choose your Preferred Type:</h2>
+    <form id="cvd_radios">
+        <div class="label">
+            <input class="inputRadio" type="radio" name="type" id="normal" value="normal">
+            <label for="normal">Normal Color Vision</label>
+        </div>
+        <div class="label">
+            <input class="inputRadio" type="radio" name="type" id="tritanopia" value="tritanopia">
+            <label for="tritanopia">Tritanopia (Blue-Blind)</label>
+        </div>
+        <div class="label">
+            <input class="inputRadio" type="radio" name="type" id="protanopia" value="protanopia">
+            <label for="protanopia">Protanopia (Red-Blind)</label>
+        </div>
+        <div class="label">
+            <input class="inputRadio" type="radio" name="type" id="deuteranopia" value="deuteranopia">
+            <label for="deuteranopia">Deuteranopia (Green-Blind)</label>
+        </div>
+        <div class="label">
+            <input class="inputRadio" type="radio" name="type" id="protanomaly" value="protanomaly">
+            <label for="protanomaly">Protanomaly (Red-Weak)</label>
+        </div>
+        <div class="label">
+            <input class="inputRadio" type="radio" name="type" id="deuteranomaly" value="deuteranomaly">
+            <label for="deuteranomaly">Deuteranomaly (Green-Weak)</label>
+        </div>
+        <div class="label">
+            <input class="inputRadio" type="radio" name="type" id="tritanomaly" value="tritanomaly">
+            <label for="tritanomaly">Tritanomaly (Blue-Weak)</label>
+        </div>
+        <div class="label">
+            <input class="inputRadio" type="radio" name="type" id="achromatopsia" value="achromatopsia">
+            <label for="achromatopsia">Achromatopsia (Monochromacy)</label>
+        </div>
+        <div class="label">
+            <input class="inputRadio" type="radio" name="type" id="achromatomaly" value="achromatomaly">
+            <label for="achromatomaly">Achromatomaly (Blue Cone Monochromacy)</label>
+        </div>
+        <div class="label">
+            <input class="inputRadio" type="radio" name="type" id="deactivate" value="deactivate" checked>
+            <label for="deactivate">Deactivate</label>
+        </div>
+    </form>
+    <script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Colour Bindness Assistance",
+  "description": "This extension will provide visually aid to people with colour blindness",
+  "version": "1.2",
+  "icons": { 
+    "16": "icon16.jpg",
+    "48": "icon48.jpg",
+    "128": "icon.jpg" 
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": { 
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["<all_urls>"],
+      "js": [
+        "jquery.min.js",
+        "ntc.js",
+        "colorblinding.js",
+        "colorDetector.js",
+        "popup.js"
+      ]
+    }
+  ]
+}
